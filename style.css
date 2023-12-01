@@ -302,3 +302,63 @@ body {
 .pointer {
     cursor: pointer;
 }
+
+/* =========START OF RELATED ARTISTS======== */
+
+#related-artists-div{
+    display: flex; 
+    position: relative;
+    top: 0;
+    left: 0;
+    flex-direction: column;   
+    width: 300px;
+    height: 590px;     
+    overflow-y: auto;
+    overflow-x: hidden; 
+    transform:rotate(-90deg)translateY(-310px);; 
+    transform-origin:right top;      
+}
+#related-artists-div > div {
+    width: 260px;
+    height: 250px;
+    padding-right: 15px;      
+  }
+
+  #related-artists-div > div {
+   
+  transform: rotate(90deg)translateY(-30px)translateX(255px);
+  transform-origin: right top;   
+  
+  }
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+#related-artists-div::-webkit-scrollbar {
+   display: none;
+}    
+
+/* Hide scrollbar for IE, Edge and Firefox */
+#related-artists-div{
+   -ms-overflow-style: none;  /* IE and Edge */
+   scrollbar-width: none;  /* Firefox */
+}
+
+#related-artists-div{
+    -webkit-mask-image: linear-gradient( black, black, black,  black, black, black, transparent);
+    mask-image: linear-gradient( black, black, black,  black, black, black, transparent);
+}
+
+#rel-art-card{
+    display: flex;
+    flex-direction: column;  
+    padding: 15px;  
+    font-size: 1rem;
+}
+
+#related-artist-pic{   
+    width: 220px;
+    height: 220px;
+    border-radius: 5px;
+    box-shadow: 0 3px 4px 0px rgba(0, 0, 0, 0.342);   
+    filter: brightness(1.35);
+    padding-bottom: 10px;
+}
